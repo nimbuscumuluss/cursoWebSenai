@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMB - Cadastro</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+        
+    
+    <style>
+        h1 {
+            color: rgb(0, 0, 113);
+        }
+
+        h2 {
+            color: rgb(0, 0, 113);
+        }
+
+        body {
+            background-color: aquamarine;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: blue;
+        }
+
+        h3 {
+            color: rgb(0, 0, 113);
+
+
+        }
+    </style>
+    <header>
+        <center>
+        <h1>🐋PMB🐋</h1>
+        <img src="img/b4.webp" alt="Imagem 1" width="250" height="250">
+    </center>
+        <p>Bem-vindo ao nosso site da ONG de Conservação das Baleias! Estamos dedicados à proteção e preservação das baleias e seu habitat marinho. Navegue pelo nosso site para aprender sobre nossos esforços de conservação, descobrir como você pode se envolver, e explorar fatos fascinantes sobre esses magníficos mamíferos marinhos. Juntos, podemos fazer a diferença na vida das baleias e no ecossistema oceânico.</p>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h3>Cadastro para voluntários</h3>
+            <p>Preencha os campos abaixo e analisaremos seus dados.<br>e entraremos em contado caso ganhe a vaga.🐳</p>
+            <form method="post" action="#">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label>Nome</label>
+                    <input type="text" name="nome" placeholder="digite seu nome" required>
+                    <label>Data de Nascimento</label>
+                    <input type="date" name="data_nascimento" required>
+                    <label>Telefone</label>
+                    <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                </fieldset>
+                <fieldset>
+                    <legend>CNH</legend>
+                    <label>Número do Registro</label>
+                    <input type="number" name="numero_registro" placeholder="informe o número da sua CNH" required>
+                    <label>Validade</label>
+                    <input type="date" name="validade" required>
+                </fieldset>
+                <fieldset>
+                    <fieldset>
+                        <legend>Cidade</legend>
+                        <label>Sua Cidade</label>
+                        <select name="cidade" required>
+                            <option value="">Escolha</option>
+                            <optgroup label="São Paulo">
+                                <option value="Santos">Santos</option>
+                                <option value="Peruíbe">Peruíbe</option>
+                                <option value="Itanhaém">Itanhaém</option>
+                            </optgroup>
+                            <optgroup label="Rio de Janeiro">
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                <option value="Angra dos Reis.">Angra dos Reis.</option>
+                                <option value="Paraty">Paraty</option>
+                            </optgroup>
+                            <optgroup label="Bahia">
+                                <option value="Salvador">Salvador</option>
+                                <option value="	Ilhéus">Ilhéus</option>
+                                <option value="Porto Seguro">Porto Seguro</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Enviar dados</button>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; <small>CUMULUS</small></p>
+    </footer>
+</body>
+
+</html>
