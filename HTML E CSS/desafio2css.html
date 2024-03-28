@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #002da0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #001d65;
+            
+        }
+
+        h2 {
+            
+            color: #0036c0;
+            
+        }
+
+        p {
+            color: #71a3ff;
+            margin: 5px;
+        }
+
+        .destaque {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e4e4e4;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            background-color: #001d65;
+            color: #fff;
+
+
+        }
+
+        .image {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        tr {
+            color: #f8f8f8;
+        }
+
+        td {
+            color: #ffffff;
+        }
+
+        th {
+            background-color: #001d65;
+        }
+
+        html,
+        body {
+            margin: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .slide-controller:nth-child(1):checked~.slide-show .slides-list {
+            --selected-item: 0;
+        }
+
+        .slide-controller:nth-child(2):checked~.slide-show .slides-list {
+            --selected-item: 1;
+        }
+
+        .slide-controller:nth-child(3):checked~.slide-show .slides-list {
+            --selected-item: 2;
+        }
+
+        .slide-controller:nth-child(4):checked~.slide-show .slides-list {
+            --selected-item: 3;
+        }
+
+        .slide-show {
+            overflow: hidden;
+        }
+
+        .slides-list {
+            --selected-item: 0;
+            --total-items: 4;
+            list-style-type: none;
+            margin: 10px 0;
+            padding: 0;
+            position: relative;
+            left: calc(var(--selected-item) * -100%);
+            width: calc(var(--total-items) * 100%);
+            transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+        }
+        caption {
+            color: #ffffff;
+            background-color:#001d65 ;
+            font-size: 20px;
+        }
+        .descrição {
+            text-align: justify;
+        }
+    </style>
+
+    <header>
+        <h1>
+            <input type="radio" class="slide-controller" name="slide" checked />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+
+            <div class="slide-show">
+                <ul class="slides-list">
+                    <li class="slide">
+                        <img src="cup2.png" />
+                    </li>
+                    <li class="slide">
+                        <img src="cup3.png" />
+                    </li>
+                    <li class="slide">
+                        <img src="cup4.png" />
+                    </li>
+                    <li class="slide">
+                        <img src="cup5.png" />
+                    </li>
+                </ul>
+            </div>
+
+        </h1>
+        <!--Inicialização do site (título, explicação etc.)-->
+        <div>
+            <h1>Doce shop</h1>
+            <center>
+            <p>Delicie-se com nossos cupcakes irresistíveis, uma explosão de sabor em cada mordida! Descubra a doçura
+                que vai encantar seus sentidos.</p>
+            </center>
+            <hr>
+            <br>
+        </div>
+        <!--Tabela de estilos em linha unica-->
+        <div>
+            <center>
+            <h2>QUAIS TEMOS </h2>
+        </center>
+            <ul>
+                <li class="cupcake"> Chocolate branco </li>
+                <li>Chocolate preto</li>
+                <li>Chocolate recheado</li>
+                <li>Chocolate gourmets</li>
+            </ul>
+        </div>
+        <hr>
+        <!--Imagem do chocolate-->
+        <div align="center">
+            <img src="cup1.png" width="500" height="500">
+        </div>
+        <br>
+    
+            <p class="descrição">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat. At eaque neque eius ducimus
+                quae in alias earum voluptatum fuga reprehenderit voluptas nesciunt, id, nulla odit, porro recusandae
+                quos?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sequi facilis molestias
+                voluptatum, hic perspiciatis veritatis saepe pariatur et, a blanditiis commodi assumenda, est tempora
+                deleniti quidem sit iure consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+                eligendi nisi ratione ea minima quam nostrum hic? Atque hic repudiandae saepe quibusdam culpa esse
+                reprehenderit, rerum dicta? Quidem, aliquid numquam.</p>
+            <hr>
+
+        
+
+        <div>
+            <!--Tabela em colunas categóricas-->
+            <table align="center" border="2">
+                <caption>HORÁRIOS DE FUNCIONAMENTO</caption>
+                <tr border="1" color="rgb(255, 0, 140)">
+                    <th> Dias da semana </th>
+                    <th> Horário</th>
+                </tr>
+                <tr>
+                    <td>Segunda á Sexta</td>
+                    <td> 11:00h até 19:30h</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>10:00h até 16:00h</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Fechado</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+        </div>
+    </header>
+</body>
+
+</html>
