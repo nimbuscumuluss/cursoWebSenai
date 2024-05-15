@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<style>
+  .bloco-transparente {
+    background-color: rgba(89,36,90,255);
+    padding: 20px;
+    width: 800px;
+
+    color: rgb(255, 255, 255)
+
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poetsen+One&display=swap');
+
+  body {
+    margin: 0;
+  }
+
+  ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(89,36,90,255);
+
+    
+  }
+
+  ul.topnav li {
+    float: left;
+  }
+
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul.topnav li a:hover:not(.active) {
+    background-color: #1111110c;
+  }
+
+  ul.topnav li a.active {
+    background-color: #5a3064;
+  }
+
+  ul.topnav li.right {
+    float: right;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    ul.topnav li.right,
+    ul.topnav li {
+      float: none;
+    }
+  }
+
+  li {
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+
+  p {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: rgb(255, 255, 255);
+  }
+
+  footer {
+    padding: 3%;
+    background-color: rgba(89,36,90,255);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  .teste{
+    float: left;
+    color: #111;
+  }
+  .teste p{
+    color:rgba(89,36,90,255);}
+
+  .meio{
+    width: 60%;
+    text-align: justify;
+  }
+  .clear{
+    clear: both;
+  }
+  .up{
+    margin-top: 50px;
+  }
+  
+</style>
+
+<body>
+
+
+  <ul class="topnav">
+    <li><a class="active" href="home.html">Home</a></li>
+    <li><a href="#prob">O problema</a></li>
+    <li><a href="#emi">Emissão</a></li>
+    <li><a href="#solu">Soluções</a></li>
+    <li><a href="IndustriaVerde.html">Indústria Verde</a></li>
+    <li><a href="ODS.html">ODS</a></li>
+    <li class="right"><img src="logo2.png" height="45" width="45"></a></li>
+  </ul>
+  <div id="carouselExampleIndicators" class="carousel slide up" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="banner 1 industria okk.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="banner emissãomenos.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="banner emissãomenos.jpg" class="d-block w-100" alt="...">
+      </div>
+      <!--AQUI-->
+
+      <!--AQUI-->
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+
+  <!--LINK FINAL PARA FUNCIONAR O CARROSSEL-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <!--FINAL-->
+
+  <br><br>
+  <center>
+    <div class="bloco-transparente">
+      <bold>SUSTENTABILIDADE + FORTALECIMENTO DA INDÚSTRIA PAULISTA</bold>
+    </div>
+  </center>
+  <br>
+  <br>
+  <div>
+    <p id="prob"></p>
+    <br> <br>
+    <h1> O PROBLEMA</h1>
+    <div class="teste meio">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+    </div>
+    <div class="teste">
+      <img src="logo.png">
+    </div> 
+    <div class="clear"></div>
+  </div>
+
+
+
+
+  <div>
+    <h1 id="emi" style="text-align: right; margin-right: 100px;">EMISSÃO</h1>
+    <div class="teste">
+      <img src="logo.png">
+    </div>
+    <div class="teste meio">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+
+
+<div>
+   <h1 id="solu">SOLUÇÕES</h1>
+   <div class="teste meio">
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ex. Saepe, reprehenderit. Mollitia ex veritatis quos cum, quisquam animi numquam maiores ullam unde totam distinctio obcaecati pariatur omnis beatae amet.
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem accusantium repudiandae rem porro ipsam ipsa nisi molestiae quisquam minima, fugiat est dignissimos harum illo laborum eveniet assumenda voluptatem eius?</p>
+   </div>
+
+   <div class="teste">
+     <img src="logo.png">
+   </div>
+   <div class="clear"></div>
+  
+ </div>
+</div>
+
+  <div class="clear"></div>
+ 
+</div>
+
+
+
+  <center>
+    <footer>
+      2° EM - Técnico Multimídias - SESI Santa Cruz do Rio Pardo
+    </footer>
+  </center>
+</body>
+
+</html>
