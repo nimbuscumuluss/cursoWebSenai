@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #6798C0;
+        position: relative;
+        height: 45px;
+    }
+
+    ul.topnav li {
+        float: left;
+    }
+
+    ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-right: solid rgba(255, 255, 255, 0.352);
+        transition: 0.2s;
+    }
+
+    ul.topnav li a:hover:not(.active) {
+        background-color: #5a828889;
+    }
+
+    ul.topnav li a.active {
+        background-color: #a4ddda;
+        font-weight: bold;
+        color: rgb(32, 82, 148);
+    }
+
+    ul.topnav li a.active:hover {
+        background-color: #87ece7;
+        font-weight: bold;
+        color: rgb(35, 103, 191);
+    }
+
+    ul.topnav li.right {
+        float: right;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        ul.topnav li.right,
+        ul.topnav li {
+            float: none;
+        }
+    }
+
+    li {
+        font-family: "Barlow Semi Condensed", sans-serif;
+    }
+
+    p {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    footer {
+        padding: 3%;
+        background-color: #99dcea;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .logo {
+        margin-right: 10px;
+        margin-top: -6px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .u {
+        width: 30px;
+        position: absolute;
+        right: 0px;
+        margin-right: 312px;
+        margin-top: 6px;
+
+    }
+
+    .search {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 1px 6px;
+        text-decoration: none;
+        font-size: 17px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    footer {
+        padding: 3%;
+        background-color: #6798C0;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .bloco-transparente {
+        background-color: #6798C0;
+        padding: 20px;
+        width: 800px;
+        color: rgb(255, 255, 255)
+    }
+
+    .slider {
+        display: block;
+        height: 400px;
+        width: 700px;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+        top: -40px;
+    }
+
+    .slider li {
+        list-style: none;
+        position: absolute;
+    }
+
+    .slider img {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+        border-radius: 30px;
+
+
+    }
+
+
+    .slider input {
+        display: none;
+    }
+
+
+    .slider label {
+        background-color: #ffffff9e;
+        bottom: 10px;
+        cursor: pointer;
+        display: block;
+        height: 5px;
+        position: absolute;
+        width: 5px;
+        z-index: 10;
+
+    }
+
+    .slider li:nth-child(1) label {
+        left: 10px;
+    }
+
+    .slider li:nth-child(2) label {
+        left: 40px;
+    }
+
+    .slider li:nth-child(3) label {
+        left: 70px;
+    }
+
+    .slider img {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .slider li input:checked~img {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+
+    }
+
+    .pesq {
+        border-radius: 5px;
+        padding: 8px;
+        border: solid #05668D 3px;
+        background-color: #f5f6fa;
+        color: #8795a2;
+        width: 50%;
+        height: 10px;
+    }
+
+    .dir_redes {
+        float: right;
+        padding-top: 20px;
+        margin-right: 10px;
+    }
+
+    .dir {
+        width: 100px;
+        margin-top: 10px;
+        width: 250px;
+        float: right;
+    }
+
+    .left {
+        float: left;
+
+    }
+
+    .right {
+        float: right;
+
+    }
+
+    hr {
+        background-color: #05668D;
+    }
+
+    .bloco-transparente2 {
+        background-color: #6798C0;
+        padding: 40px;
+        width: 550px;
+        color: rgb(255, 255, 255);
+        float:left;
+    }
+
+    .bloco-transparente3 {
+        background-color: #6798C0;
+        padding: 40px;
+        width: 550px;
+        color: rgb(255, 255, 255);
+        float: right;
+    }
+</style>
+
+
+</head>
+
+<ul class="topnav">
+    <img src="user-profile-icon.svg" class="u">
+    <button class="search">ok</button>
+    <input type="text" placeholder="Search.." class="search">
+
+    <li><a class="active" href="home.html">HOME</a></li>
+    <li><a href="problema.html">HISTÓRIA</a></li>
+    <li><a href="emissão.html">ARTES</a></li>
+    <li><a href="Soluções.html">PERFORMANCES</a></li>
+    <li><a href="IndustriaVerde.html">LEILÕES</a></li>
+    <li><a href="ODS.html">EVENTOS</a></li>
+    <li class="right"><img src="25a390dc-a227-491d-a3ba-1995ff13d196-removebg-preview.png" height="40" width="40"
+            class="logo"></a></li>
+</ul>
+
+<img src="b1.jpeg" width="100%">
+<br><br>
+<br><br>
+<center>
+    <div class="bloco-transparente">
+
+        <h4>"DESPERTANTO CONCIÊNCIAS E COLORINDO VIDAS ATRAVÉS DA ARTE".</h4>
+
+    </div>
+</center>
+</header>
+<br> <br> <br> <br>
+
+<ul class="slider">
+    <li>
+        <input type="radio" id="slide1" name="slide" checked>
+        <label for="slide1"></label>
+        <img src="a1.png" />
+    </li>
+    <li>
+        <input type="radio" id="slide2" name="slide">
+        <label for="slide2"></label>
+        <img src="a2.png" />
+    </li>
+    <li>
+        <input type="radio" id="slide3" name="slide">
+        <label for="slide3"></label>
+        <img src="a3.png" />
+    </li>
+</ul>
+<hr>
+<br>
+
+<br>
+<br>
+<br>
+<center>
+    <H2>EQUIPE</H2>
+    <img src="f1.jpeg" height="220" width="220">
+    <img src="f2.jpeg" height="220" width="220">
+    <img src="f3.jpeg" height="220" width="220">
+    <img src="F4.jpeg" "height=" 220" width="220">
+    <img src="f5.jpeg""height=" 220" width="220">
+    <img src="f6.jpeg" "height=" 220" width="220">
+</center>
+<hr>
+<br>
+<br>
+<br>
+<div class="bloco-transparente2">
+    <h1><center>96,2% <br><BR>
+    NÃO APRECIAM A ARTE</center></h1>
+</div>
+
+<div class="bloco-transparente3">
+    <h1><center>3,8% <BR><BR>
+    APRECIAM A ARTE</center></h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<BR.
+<BR>
+    <BR>
+<footer>
+    
+    
+    <hr>
+    <br>
+    <center>
+    Instituto valdez-
+    SESI-SP
+</center>
+
+</footer>
+
+</body>
+
+</html>
