@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacau Show</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/icon" href="favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #4b2c20;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            transition: color 0.3s ease;
+            border-radius: 10%;
+            font-family: "Pacifico", cursive;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+
+        .nav-links li::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ffcc00;
+            transition: width 0.3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .nav-links li:hover::after {
+            width: 100%;
+        }
+
+        .mano {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mano">
+        <center>
+            <img src="mds.jpeg">
+        </center>
+    </div>
+    <header>
+        <certer>
+            <nav class="navbar">
+                <div class="logo"><img src="aiai.png" width="150"></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#lojas">Lojas</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </certer>
+    </header>
+
+    <!-- Jumbotron -->
+   <!-- Jumbotron -->
+   <div class="jumbotron jumbotron-fluid" style="background-image: url(prop.jpeg); background-size: cover; background-position: center; color: white;">
+    <div class="container">
+        <h1 class="display-4">Bem-vindo à Cacau Show</h1>
+        <p class="lead">Os melhores chocolates para você.</p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
