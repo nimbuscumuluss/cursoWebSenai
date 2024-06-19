@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG de Paleontologia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #000;
+        color: #fff;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    header {
+        background: #333;
+        color: #fff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #77D6D1 3px solid;
+    }
+
+    header a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    header ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    header li {
+        float: left;
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+
+    header #branding {
+        float: left;
+    }
+
+    header #branding h1 {
+        margin: 0;
+    }
+
+    header nav {
+        float: right;
+        margin-top: 10px;
+    }
+
+    header .highlight,
+    header .current a {
+        color: #77D6D1;
+        font-weight: bold;
+    }
+
+    header a:hover {
+        color: #77D6D1;
+    }
+
+    #showcase {
+        min-height: 400px;
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    #showcase h1 {
+        margin-top: 100px;
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    #showcase p {
+        font-size: 20px;
+    }
+
+    #about,
+    #newsletter,
+    #boxes {
+        padding: 20px;
+    }
+
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact-form label {
+        margin: 10px 0 5px;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #contact-form button {
+        padding: 10px;
+        background: #77D6D1;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #contact-form button:hover {
+        background: #5A9A9A;
+    }
+
+    .projeto,
+    .equipe-membro {
+        background: #444;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 5px;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Mensagem enviada com sucesso!');
+                contactForm.reset();
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        });
+    });
+
+</script>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>ONG de Paleontologia</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Nossa missão é explorar e preservar os fósseis para futuras gerações.</p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <div class="container">
+                <h2>Nossos Projetos</h2>
+                <div class="projeto">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1.</p>
+                </div>
+                <div class="projeto">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe">
+            <div class="container">
+                <h2>Nossa Equipe</h2>
+                <div class="equipe-membro">
+                    <h3>Nome do Membro 1</h3>
+                    <p>Descrição do membro 1.</p>
+                </div>
+                <div class="equipe-membro">
+                    <h3>Nome do Membro 2</h3>
+                    <p>Descrição do membro 2.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <form id="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ONG de Paleontologia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

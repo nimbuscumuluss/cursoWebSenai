@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG de Paleontologia</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Barra de Carregamento -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <div id="content" class="hidden">
+        <header>
+            <div class="container">
+                <h1>ONG de Paleontologia</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="sobre" class="fade-in">
+                <div class="container">
+                    <h2>Sobre Nós</h2>
+                    <p>Nossa missão é explorar e preservar os fósseis para futuras gerações.</p>
+                </div>
+            </section>
+
+            <section id="projetos" class="fade-in">
+                <div class="container">
+                    <h2>Nossos Projetos</h2>
+                    <div class="projeto">
+                        <h3>Projeto 1</h3>
+                        <p>Descrição do projeto 1.</p>
+                    </div>
+                    <div class="projeto">
+                        <h3>Projeto 2</h3>
+                        <p>Descrição do projeto 2.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="equipe" class="fade-in">
+                <div class="container">
+                    <h2>Nossa Equipe</h2>
+                    <div class="equipe-membro">
+                        <h3>Nome do Membro 1</h3>
+                        <p>Descrição do membro 1.</p>
+                    </div>
+                    <div class="equipe-membro">
+                        <h3>Nome do Membro 2</h3>
+                        <p>Descrição do membro 2.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="galeria" class="fade-in">
+                <div class="container">
+                    <h2>Galeria</h2>
+                    <div class="galeria">
+                        <div class="galeria-item">
+                            <img src="img/fossil1.jpg" alt="Fóssil 1">
+                            <p>Fóssil 1</p>
+                        </div>
+                        <div class="galeria-item">
+                            <img src="img/fossil2.jpg" alt="Fóssil 2">
+                            <p>Fóssil 2</p>
+                        </div>
+                        <div class="galeria-item">
+                            <img src="img/fossil3.jpg" alt="Fóssil 3">
+                            <p>Fóssil 3</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="fade-in">
+                <div class="container">
+                    <h2>Contato</h2>
+                    <form id="contact-form">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 ONG de Paleontologia. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
