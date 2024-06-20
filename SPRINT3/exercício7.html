@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Salário do Vendedor</title>
+    <script>
+        function calcularSalario() {
+            var nome = prompt('Insira o nome do vendedor');
+            var salarioFixo = parseFloat(prompt('Insira o salário fixo do vendedor'));
+            var totalVendas = parseFloat(prompt('Insira o total de vendas efetuadas no mês'));
+
+            if (isNaN(salarioFixo) || isNaN(totalVendas)) {
+                document.write('Por favor, insira valores válidos para salário e vendas.');
+                return;
+            }
+
+            var comissao = totalVendas * 0.15;
+            var salarioTotal = salarioFixo + comissao;
+
+            document.write('<h1>Cálculo de Salário do Vendedor</h1>');
+            document.write('<p>Nome do Vendedor: ' + nome + '</p>');
+            document.write('<p>Salário Fixo: R$ ' + salarioFixo.toFixed(2) + '</p>');
+            document.write('<p>Total de Vendas: R$ ' + totalVendas.toFixed(2) + '</p>');
+            document.write('<p>Comissão (15%): R$ ' + comissao.toFixed(2) + '</p>');
+            document.write('<p><strong>Total a Receber: R$ ' + salarioTotal.toFixed(2) + '</strong></p>');
+        }
+    </script>
+</head>
+<body onload="calcularSalario()">
+</body>
+</html>
+

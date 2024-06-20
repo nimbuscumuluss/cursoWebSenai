@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo das Raízes da Equação de Bhaskara</title>
+    <script>
+        function calcularBhaskara() {
+            var a = parseFloat(prompt('Insira o valor de a'));
+            var b = parseFloat(prompt('Insira o valor de b'));
+            var c = parseFloat(prompt('Insira o valor de c'));
+
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                document.write('Por favor, insira valores válidos.');
+                return;
+            }
+
+            if (a === 0) {
+                document.write('Impossível calcular: a = 0');
+                return;
+            }
+
+            var delta = b * b - 4 * a * c;
+
+            if (delta < 0) {
+                document.write('Impossível calcular: raiz de delta negativo');
+                return;
+            }
+
+            var raizDelta = Math.sqrt(delta);
+            var x1 = (-b + raizDelta) / (2 * a);
+            var x2 = (-b - raizDelta) / (2 * a);
+
+            document.write('<h1>Cálculo das Raízes da Equação de Bhaskara</h1>');
+            document.write('<p>Valor de a: ' + a + '</p>');
+            document.write('<p>Valor de b: ' + b + '</p>');
+            document.write('<p>Valor de c: ' + c + '</p>');
+            document.write('<p>Delta: ' + delta.toFixed(2) + '</p>');
+            document.write('<p>Raiz de Delta: ' + raizDelta.toFixed(2) + '</p>');
+            document.write('<p><strong>Raiz x1: ' + x1.toFixed(2) + '</strong></p>');
+            document.write('<p><strong>Raiz x2: ' + x2.toFixed(2) + '</strong></p>');
+        }
+    </script>
+</head>
+<body onload="calcularBhaskara()">
+</body>
+</html>
