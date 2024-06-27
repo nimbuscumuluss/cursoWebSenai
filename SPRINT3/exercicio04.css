@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(14, 12, 12);
+}
+
+/* ------------ AGENDA ------------*/
+
+.agenda{
+    color: white;
+    border: 2px solid white;
+}
+
+.agenda > h3{
+    padding-bottom: 5px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.agenda > p{
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.agenda > img{
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.agenda > iframe{
+    width: 100%;
+}
+/* ------------ FIM AGENDA ------------*/
+
+
+/* ------------ CARDAPIO ------------*/
+.cardapio{
+    color: white;
+    border: 2px solid white;
+}
+
+.cardapio > h3{
+    padding-bottom: 5px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.cardapio > p{
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.cardapio > div{
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardapio > div > img{
+    border: 2px solid gold;
+    border-radius: 15px;
+    width: 30%;
+}
+
+.cardapio > iframe{
+    width: 100%;
+}
+/* ------------ FIM CARDAPIO ------------*/
+
+
+/* ------------ RESTAURANTE ------------*/
+.restaurante{
+    color: white;
+    border: 2px solid white;
+}
+
+.restaurante > h3{
+    padding-bottom: 5px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.restaurante > p{
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.restaurante > img{
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.restaurante > iframe{
+    width: 100%;
+}
