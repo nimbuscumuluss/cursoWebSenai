@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Carousel</title>
+    <style>
+        body {
+            background-image: url(vlho.avif);
+            color: #915344;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .carousel-container {
+            margin-top: 80px; /* Ajuste conforme necessário */
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .carousel-slide {
+            display: flex;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: 65vh;
+            object-fit: cover;
+        }
+        .carousel-prev, .carousel-next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 50%;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .carousel-prev {
+            left: 10px;
+        }
+        .carousel-next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menu -->
+<nav class="navbar">
+    <a class="navbar-brand" href="#"><img src="Design sem nome (36).png" width="50"></a>
+</nav>
+
+<!-- Carrossel -->
+<div class="carousel-container">
+    <div class="carousel-slide">
+        <img src="https://via.placeholder.com/800x400" alt="First slide">
+        <img src="https://via.placeholder.com/800x400" alt="Second slide">
+        <img src="https://via.placeholder.com/800x400" alt="Third slide">
+    </div>
+    <a class="carousel-prev" onclick="moveSlide(-1)">&#10094;</a>
+    <a class="carousel-next" onclick="moveSlide(1)">&#10095;</a>
+</div>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide img');
+
+    function showSlides() {
+        slides.forEach((slide, index) => {
+            slide.style.display = (index === slideIndex) ? 'block' : 'none';
+        });
+    }
+
+    function moveSlide(n) {
+        slideIndex += n;
+        if (slideIndex >= slides.length) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = slides.length - 1;
+        showSlides();
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        showSlides();
+    });
+</script>
+
+</body>
+</html>
