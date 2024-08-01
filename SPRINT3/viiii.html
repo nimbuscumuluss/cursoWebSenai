@@ -3,100 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Carousel</title>
+    <title>Vintage Store</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="retro.ico" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ultra&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+        
         body {
-            background-image: url(vlho.avif);
+            background-image: url('WhatsApp Image 2024-08-01 at 14.47.52.jpeg');
             color: #915344;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
+        
         .navbar {
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 15px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
         }
+        
         .carousel-container {
-            margin-top: 80px; /* Ajuste conforme necessário */
-            position: relative;
-            max-width: 800px;
-            margin: auto;
-            overflow: hidden;
+            margin-top: 100px;
         }
-        .carousel-slide {
-            display: flex;
-        }
-        .carousel-slide img {
-            width: 100%;
+        
+        .carousel-item {
             height: 65vh;
-            object-fit: cover;
-        }
-        .carousel-prev, .carousel-next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
+            background: #9cddc8;
             color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 50%;
-            user-select: none;
-            background-color: rgba(0, 0, 0, 0.5);
+            position: relative;
         }
-        .carousel-prev {
-            left: 10px;
+        
+        .carousel-caption {
+            bottom: 50%;
+            transform: translateY(50%);
         }
-        .carousel-next {
-            right: 10px;
+        
+        .card {
+            margin-bottom: 30px;
+        }
+        
+        .card-title {
+            color: #f18273;
+        }
+        
+        .card-text {
+            color: #eeaa88;
+        }
+        
+        .btn-primary {
+            background-color: #915344;
+            border-color: #915344;
+        }
+        
+        .btn-primary:hover {
+            background-color: #7c3e2c;
+            border-color: #7c3e2c;
+        }
+        
+        .carousel-item img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        
+        h5 {
+            font-family: "Ultra", serif;
+        }
+        
+        p, a, button {
+            font-family: "Oswald", sans-serif;
+        }
+        
+        .bloco {
+            background-color: #000000;
+            padding: 40px;
+            width: 550px;
+            color: #ffffff;
+            float: right;
         }
     </style>
 </head>
 <body>
 
-<!-- Menu -->
-<nav class="navbar">
-    <a class="navbar-brand" href="#"><img src="Design sem nome (36).png" width="50"></a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="vintage.html"><img src="L2.png" width="80" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">💵</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">💌</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">🛒</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">🔍</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<!-- Carrossel -->
-<div class="carousel-container">
-    <div class="carousel-slide">
-        <img src="https://via.placeholder.com/800x400" alt="First slide">
-        <img src="https://via.placeholder.com/800x400" alt="Second slide">
-        <img src="https://via.placeholder.com/800x400" alt="Third slide">
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide carousel-container" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="b1 (3).jpeg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="teste.jpeg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="b5.jpeg" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+            <img src="B6.jpeg" class="d-block w-100" alt="Slide 4">
+        </div>
     </div>
-    <a class="carousel-prev" onclick="moveSlide(-1)">&#10094;</a>
-    <a class="carousel-next" onclick="moveSlide(1)">&#10095;</a>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
 </div>
 
-<script>
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.carousel-slide img');
+<br><br>
 
-    function showSlides() {
-        slides.forEach((slide, index) => {
-            slide.style.display = (index === slideIndex) ? 'block' : 'none';
-        });
-    }
+<!-- Bloco de Aviso -->
+<center>
+    <div class="bloco">
+        <!-- Conteúdo do Bloco de Aviso -->
+    </div>
+</center>
 
-    function moveSlide(n) {
-        slideIndex += n;
-        if (slideIndex >= slides.length) slideIndex = 0;
-        if (slideIndex < 0) slideIndex = slides.length - 1;
-        showSlides();
-    }
+<br><br>
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-        showSlides();
-    });
-</script>
+<!-- Cards de Anúncios -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <img src="10% de.png" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Rádios com Músicas</h5>
+                    <p class="card-text">10% de Desconto</p>
+                    <a href="#" class="btn btn-primary">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <img src="10% de (1).png" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Roupas Retro</h5>
+                    <p class="card-text">20% de Desconto</p>
+                    <a href="#" class="btn btn-primary">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <img src="5.png" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Telefone Antigo</h5>
+                    <p class="card-text">40% de Desconto</p>
+                    <a href="#" class="btn btn-primary">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Produtos -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="retro/1.png" class="card-img-top" alt="Produto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Rádio Antigo</h5>
+                    <p class="card-text">R$59,99</p>
+                    <button class="btn btn-outline-warning">❤</button>
+                    <button class="btn btn-outline-warning">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="retro/2.png" class="card-img-top" alt="Produto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Bicicleta</h5>
+                    <p class="card-text">R$70,99</p>
+                    <button class="btn btn-outline-warning">❤</button>
+                    <button class="btn btn-outline-warning">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="retro/3.png" class="card-img-top" alt="Produto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Telefone d 90</h5>
+                    <p class="card-text">R$67,80</p>
+                    <button class="btn btn-outline-warning">❤</button>
+                    <button class="btn btn-outline-warning">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="retro/4.png" class="card-img-top" alt="Produto 4">
+                <div class="card-body">
+                    <h5 class="card-title">Carro Antigo</h5>
+                    <p class="card-text">R$89,00</p>
+                    <button class="btn btn-outline-warning">❤</button>
+                    <button class="btn btn-outline-warning">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
