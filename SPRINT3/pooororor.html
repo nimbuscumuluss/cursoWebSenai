@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto à Esquerda e Texto à Direita</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .container img {
+            width: 45%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content {
+            width: 50%;
+            padding-left: 20px;
+        }
+
+        .content h2 {
+            font-size: 2.2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container img,
+            .content {
+                width: 100%;
+                padding-left: 0;
+            }
+
+            .content h2 {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="sua-imagem.jpg" alt="Foto à esquerda">
+        <div class="content">
+            <h2>Título do Texto</h2>
+            <p>
+                Este é um exemplo de texto que fica à direita da imagem. Você pode usar este layout para diversos tipos de conteúdo, como descrições de projetos, portfólios ou qualquer outro conteúdo que precise destacar uma imagem ao lado de um texto.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
